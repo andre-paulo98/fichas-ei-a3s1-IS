@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelLib1", "ExcelLib1\ExcelLib1.csproj", "{B0805217-4F82-4D20-9B27-95835E801237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinExcelApp", "WinExcelApp\WinExcelApp.csproj", "{93FF7D75-1B4C-4C86-84C4-75221C37B65B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0805217-4F82-4D20-9B27-95835E801237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0805217-4F82-4D20-9B27-95835E801237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0805217-4F82-4D20-9B27-95835E801237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0805217-4F82-4D20-9B27-95835E801237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93FF7D75-1B4C-4C86-84C4-75221C37B65B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FF7D75-1B4C-4C86-84C4-75221C37B65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FF7D75-1B4C-4C86-84C4-75221C37B65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FF7D75-1B4C-4C86-84C4-75221C37B65B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44DA391D-70FC-4384-A55E-5BDB113D4F0D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\ExcelLib1\bin\Debug\ExcelLib1.dll
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\ExcelLib1\bin\Debug\ExcelLib1.pdb
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\ExcelLib1\obj\Debug\ExcelLib1.csprojAssemblyReference.cache
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\ExcelLib1\obj\Debug\ExcelLib1.csproj.ResolveComReference.cache
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\ExcelLib1\obj\Debug\ExcelLib1.csproj.CoreCompileInputs.cache
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\ExcelLib1\obj\Debug\ExcelLib1.dll
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\ExcelLib1\obj\Debug\ExcelLib1.pdb

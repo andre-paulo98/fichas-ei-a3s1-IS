@@ -1,0 +1,13 @@
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\bin\Debug\WinExcelApp.exe.config
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\bin\Debug\WinExcelApp.exe
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\bin\Debug\WinExcelApp.pdb
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\bin\Debug\ExcelLib1.dll
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\bin\Debug\ExcelLib1.pdb
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\obj\Debug\WinExcelApp.csprojAssemblyReference.cache
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\obj\Debug\WinExcelApp.Form1.resources
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\obj\Debug\WinExcelApp.Properties.Resources.resources
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\obj\Debug\WinExcelApp.csproj.GenerateResource.cache
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\obj\Debug\WinExcelApp.csproj.CoreCompileInputs.cache
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\obj\Debug\WinExcelApp.csproj.CopyComplete
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\obj\Debug\WinExcelApp.exe
+C:\Users\2181841\Desktop\fichas-ei-a3s1-IS\SolutionExcelAutomation\WinExcelApp\obj\Debug\WinExcelApp.pdb
