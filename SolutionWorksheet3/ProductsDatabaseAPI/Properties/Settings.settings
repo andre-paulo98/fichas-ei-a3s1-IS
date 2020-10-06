@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="ConnApp" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\andre\Documents\ESCOLA\3ano\1semestre\INTEGRACAO-DE-SISTEMAS\SolutionWorksheet3\ProductsDatabaseAPI\App_Data\DBProds.mdf;Integrated Security=True</Value>
+      <Value Profile="(Default)">Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DBProds.mdf;Integrated Security=True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

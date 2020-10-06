@@ -31,7 +31,9 @@ namespace ProductsDatabaseAPI.Controllers {
                         Category = (string)reader["Category"],
                         Price = (reader["Price"] == DBNull.Value) ? 0 : (decimal)reader["Price"]
                     };
+                    products.Add(prod);
                 }
+
 
             } catch (Exception) {
 

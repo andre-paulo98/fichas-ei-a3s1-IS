@@ -25,9 +25,8 @@ namespace ProductsDatabaseAPI.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\andre\\Documents\\ESCO" +
-            "LA\\3ano\\1semestre\\INTEGRACAO-DE-SISTEMAS\\SolutionWorksheet3\\ProductsDatabaseAPI\\" +
-            "App_Data\\DBProds.mdf;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DBProds.mdf;I" +
+            "ntegrated Security=True")]
         public string ConnApp {
             get {
                 return ((string)(this["ConnApp"]));
