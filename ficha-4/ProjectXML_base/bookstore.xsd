@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- this is the root element -->
+  <xs:element name="bookstore" type="booksList" />
+
+  
+  <xs:complexType name="booksList">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="book" type="bookType" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="bookType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="author" type="xs:string" />
+      <xs:element name="year" type="yearType" />
+      <xs:element name="price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="rate" type="rateType" />
+      <xs:element minOccurs="0" name="bookformat" type="bookformatTypes" />
+      
+    </xs:sequence>
+    <xs:attribute name="category" type="categoryTypes" use="required" />
+    <xs:attribute name="isbn" type="xs:string" use="optional" />
+  </xs:complexType>
+  
+  <!-- Restrições de Domínio -->
+  <xs:simpleType name="yearType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1900"/>
+      <xs:maxInclusive value="2999"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="bookformatTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="paperback"/>
+      <xs:enumeration value="electronic book text"/>
+      <xs:enumeration value="hardback"/>
+      <xs:enumeration value="ebook"/>
+      <xs:enumeration value="loose-leaf"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="categoryTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="WEB"/>
+      <xs:enumeration value="CHILDREN"/>
+      <xs:enumeration value="SCIENCE"/>
+      <xs:enumeration value="ROMANCE"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="rateType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
