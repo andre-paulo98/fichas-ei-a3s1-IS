@@ -98,7 +98,54 @@ namespace ProjectXML
 
         private void buttonEx7_Click(object sender, EventArgs e) {
             HandlerXML handler = new HandlerXML(textBoxXmlFile.Text, textBoxXsdFile.Text);
-            handler.GetTitles();
+            var titles = handler.GetTitles();
+
+            listBoxBookTitles.DataSource = titles;
+        }
+
+        private void listBoxBookTitles_SelectedIndexChanged(object sender, EventArgs e) {
+            labelSelectedTitle.Text = listBoxBookTitles.SelectedItem.ToString();
+        }
+
+        private void buttonEx8_Click(object sender, EventArgs e) {
+            string author = textBoxNewAuthorName.Text;
+
+            HandlerXML handler = new HandlerXML(textBoxXmlFile.Text, textBoxXsdFile.Text);
+            handler.UpdateAuthorByTitle(labelSelectedTitle.Text, author);
+
+            MessageBox.Show("Atualizado com sucesso!");
+        }
+
+        private void button3_Click(object sender, EventArgs e) {
+            string rate = numericUpDown1.Value.ToString();
+
+            HandlerXML handler = new HandlerXML(textBoxXmlFile.Text, textBoxXsdFile.Text);
+            handler.AddRateToBook(labelSelectedTitle.Text, rate);
+
+            MessageBox.Show("Atualizado com sucesso!");
+        }
+
+        private void buttonEx10_Click(object sender, EventArgs e) {
+            string isbn = textBoxISBN.Text;
+
+            HandlerXML handler = new HandlerXML(textBoxXmlFile.Text, textBoxXsdFile.Text);
+            handler.AddAttributeISBNToBook(labelSelectedTitle.Text, isbn);
+
+            MessageBox.Show("Atualizado com sucesso!");
+        }
+
+        private void button4_Click(object sender, EventArgs e) {
+            string category = textBox1.Text;
+
+            HandlerXML handler = new HandlerXML(textBoxXmlFile.Text, textBoxXsdFile.Text);
+            int number = handler.getNumberBooksPerCategory(category);
+
+            MessageBox.Show($"Número de livros da categoria '{category}': {number}");
+        }
+
+        private void button5_Click(object sender, EventArgs e) {
+            XPathEditor editor = new XPathEditor();
+            editor.ShowDialog();
         }
     }
 }

@@ -53,6 +53,10 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -145,6 +149,7 @@
             this.listBoxBookTitles.Name = "listBoxBookTitles";
             this.listBoxBookTitles.Size = new System.Drawing.Size(193, 186);
             this.listBoxBookTitles.TabIndex = 8;
+            this.listBoxBookTitles.SelectedIndexChanged += new System.EventHandler(this.listBoxBookTitles_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -185,6 +190,7 @@
             this.buttonEx8.TabIndex = 12;
             this.buttonEx8.Text = "Ex. 8 - Update Book Author";
             this.buttonEx8.UseVisualStyleBackColor = true;
+            this.buttonEx8.Click += new System.EventHandler(this.buttonEx8_Click);
             // 
             // textBoxNewAuthorName
             // 
@@ -245,6 +251,7 @@
             this.buttonEx10.TabIndex = 18;
             this.buttonEx10.Text = "Ex. 10 - Add ISBN";
             this.buttonEx10.UseVisualStyleBackColor = true;
+            this.buttonEx10.Click += new System.EventHandler(this.buttonEx10_Click);
             // 
             // textBoxISBN
             // 
@@ -292,6 +299,7 @@
             this.button3.TabIndex = 14;
             this.button3.Text = "Ex. 9 - Add rate";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -302,11 +310,51 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Rate:";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(358, 369);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 13;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(300, 372);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Category:";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(464, 367);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(157, 23);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Ex. 11 - Get Number of Books";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(303, 396);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(318, 23);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "Ex. 12 - XPath Editor";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 395);
+            this.ClientSize = new System.Drawing.Size(631, 433);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonEx7);
@@ -361,6 +409,10 @@
         private System.Windows.Forms.Button buttonEx10;
         private System.Windows.Forms.TextBox textBoxISBN;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

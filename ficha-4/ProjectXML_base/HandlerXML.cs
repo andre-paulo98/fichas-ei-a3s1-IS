@@ -35,31 +35,77 @@ namespace ProjectXML {
             doc.Load(XmlFilePath);
 
             List<string> titles = new List<string>();
-            foreach (XmlElement item in doc.DocumentElement.ChildNodes) {
-                Console.WriteLine(item);
-                Console.WriteLine(item.GetElementsByTagName("title"));
+            
+            foreach (XmlElement item in doc.SelectNodes("/bookstore/book/title")) {
+                titles.Add(item.InnerText);
             }
 
-            return null;
+            /*foreach (XmlElement item in doc.DocumentElement.ChildNodes) {
+                titles.Add(item.GetElementsByTagName("title")[0].InnerText);
+            }*/
+
+            return titles;
         }
         //**********************************************
         // Ex. 8
         //**********************************************       
         public void UpdateAuthorByTitle(string title, string author) {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(XmlFilePath);
 
+            doc.SelectSingleNode($"/bookstore/book[title='{title}']/author").InnerText = author;
+
+            doc.Save(XmlFilePath);
         }
 
         //**********************************************
         // Ex. 9
         //**********************************************  
         public void AddRateToBook(string title, string rate) {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(XmlFilePath);
 
+            XmlNode node = doc.SelectSingleNode($"/bookstore/book[title='{title}']/rate");
+            if(node != null) {
+
+                node.InnerText = rate;
+
+            } else { // does not exist, needs to be created
+
+                XmlNode rateEl = doc.CreateElement("rate");
+                rateEl.InnerText = rate;
+
+                doc.SelectSingleNode($"/bookstore/book[title='{title}']").AppendChild(rateEl);
+            }
+
+            doc.Save(XmlFilePath);
         }
         //**********************************************
         // Ex. 10 Add Attribute
         //**********************************************  
         public void AddAttributeISBNToBook(string title, string isbn) {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(XmlFilePath);
 
+            XmlAttribute isbAt = doc.CreateAttribute("isbn");
+            isbAt.Value = isbn;
+
+            doc.SelectSingleNode($"/bookstore/book[title='{title}']").Attributes.Append(isbAt);
+
+            doc.Save(XmlFilePath);
+        }
+
+        //**********************************************
+        // Ex. 11 Get Number of Books per Category
+        //********************************************** 
+        public int getNumberBooksPerCategory(string category) {
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load(XmlFilePath);
+
+            var r = doc.SelectNodes($"/bookstore/book[@category='{category}']");
+
+            return r.Count;
         }
 
         #region Ex. 6 - Validate XML with XML Schema (xsd)
