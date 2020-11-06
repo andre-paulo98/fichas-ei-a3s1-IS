@@ -30,6 +30,9 @@ namespace ficha5_ServerBookstore {
         Book GetBookByTitle(string title);
 
         [OperationContract]
+        List<Book> GetBooksByTitle(string title);
+
+        [OperationContract]
         bool DeleteBook(string title);
 
     }

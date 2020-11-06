@@ -109,6 +109,19 @@ namespace ficha5_ServerBookstore {
             return books;
         }
 
+        public List<Book> GetBooksByTitle(string title) {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(FILEPATH);
+
+            List<Book> books = new List<Book>();
+
+            foreach (XmlElement item in doc.SelectNodes($"/bookstore/book[contains(title,'{title}')]")) {
+                books.Add(bookFromElement(item));
+            }
+
+            return books;
+        }
+
         private Book bookFromElement(XmlElement el) {
             string title = el["title"].InnerText;
             string author = el["author"].InnerText;

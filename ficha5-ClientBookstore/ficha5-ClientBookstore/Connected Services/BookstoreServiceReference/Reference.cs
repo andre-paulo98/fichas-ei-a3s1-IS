@@ -173,6 +173,12 @@ namespace ficha5_ClientBookstore.BookstoreServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBookstore/GetBookByTitle", ReplyAction="http://tempuri.org/IServiceBookstore/GetBookByTitleResponse")]
         System.Threading.Tasks.Task<ficha5_ClientBookstore.BookstoreServiceReference.Book> GetBookByTitleAsync(string title);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBookstore/GetBooksByTitle", ReplyAction="http://tempuri.org/IServiceBookstore/GetBooksByTitleResponse")]
+        ficha5_ClientBookstore.BookstoreServiceReference.Book[] GetBooksByTitle(string title);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBookstore/GetBooksByTitle", ReplyAction="http://tempuri.org/IServiceBookstore/GetBooksByTitleResponse")]
+        System.Threading.Tasks.Task<ficha5_ClientBookstore.BookstoreServiceReference.Book[]> GetBooksByTitleAsync(string title);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBookstore/DeleteBook", ReplyAction="http://tempuri.org/IServiceBookstore/DeleteBookResponse")]
         bool DeleteBook(string title);
         
@@ -237,6 +243,14 @@ namespace ficha5_ClientBookstore.BookstoreServiceReference {
         
         public System.Threading.Tasks.Task<ficha5_ClientBookstore.BookstoreServiceReference.Book> GetBookByTitleAsync(string title) {
             return base.Channel.GetBookByTitleAsync(title);
+        }
+        
+        public ficha5_ClientBookstore.BookstoreServiceReference.Book[] GetBooksByTitle(string title) {
+            return base.Channel.GetBooksByTitle(title);
+        }
+        
+        public System.Threading.Tasks.Task<ficha5_ClientBookstore.BookstoreServiceReference.Book[]> GetBooksByTitleAsync(string title) {
+            return base.Channel.GetBooksByTitleAsync(title);
         }
         
         public bool DeleteBook(string title) {

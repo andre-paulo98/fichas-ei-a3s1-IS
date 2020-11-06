@@ -14,4 +14,16 @@
     <price>38.36</price>
     <rate>3</rate>
   </book>
+  <book category="SCIENCE">
+    <title>123</title>
+    <author>123</author>
+    <year>1234</year>
+    <price>123</price>
+  </book>
+  <book category="WEB">
+    <title>1</title>
+    <author>1</author>
+    <year>1234</year>
+    <price>12</price>
+  </book>
 </bookstore>
